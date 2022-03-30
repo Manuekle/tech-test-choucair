@@ -6,6 +6,7 @@ import co.com.choucair.certification.utest.model.UtestData;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
@@ -27,15 +28,14 @@ public class UtestStepDefinitions {
         OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(),(Login.
                 onThePage(UtestData.get(0).getStrUsername(),UtestData.get(0).getStrPassword())));
     }
+    @When("^he finds the coursed called utest$")
+    public void heFindsTheCoursedCalledUtest(){
 
-    @When("^the user Logout with their credentials")
+    }
+
+    @Then("^the user Logout with their credentials")
     public void theUserLogoutWithTheirCredentials(){
         OnStage.theActorCalled("Manuel").attemptsTo(LogOut.onThePage());
     }
-
-    //@Then("^he finds the coursed called Recursos Automatización Bancolombia$")
-    //public void heFindsTheCoursedCalledRecursosAutomatizaciónBancolombia(){
-
-    //}
 }
 

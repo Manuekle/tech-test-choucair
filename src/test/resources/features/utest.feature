@@ -9,5 +9,5 @@ Feature: Utest
     Given than manuel wants to learn automation at the utest
       | strUsername             | strPassword |
       | meerazo7@hotmail.com    | Manuel123*  |
-    When the user Logout with their credentials
-    #Then he finds the coursed called utest
+    When he finds the coursed called utest
+    Then the user Logout with their credentials

@@ -7,5 +7,5 @@ Feature: Utest
   @scenario1
   Scenario: Search for automation course
     Given than manuel wants to learn automation at the utest
-    #When he search for the utest
+    When the user Logout with their credentials
     #Then he finds the coursed called utest

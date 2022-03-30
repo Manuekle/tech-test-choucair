@@ -1,0 +1,113 @@
+<html xmlns="http://www.w3.org/1999/xhtml" class="" lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>    Sign in to uTest
+</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/auth/resources/e7un9/login/utest/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/auth/resources/e7un9/login/utest/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/auth/resources/e7un9/login/utest/img/favicon-16x16.png">
+            <link href="/auth/resources/e7un9/login/utest/css/main.css" rel="stylesheet">
+<script> if (typeof history.replaceState === 'function') {  history.replaceState({}, "some title", "https://prod-auth.cloud.utest.com/auth/realms/applause/login-actions/authenticate?execution=ec5dddbb-7669-40b4-af9c-c6c2ee5f7c6a&client_id=utestv2&tab_id=Q4T1tmOwBT4"); }</script></head>
+
+<body class="">
+
+    <div id="kc-container" class="">
+
+    <div class="utest-welcome">
+      <a href="https://www.utest.com" aria-label="uTest home">
+        <div class="utest-logo">
+        </div>
+      </a>
+        <div class="utest-left-content">
+          <h1>Welcome to the world's<br>largest community of<br>testers.</h1>
+          <div id="aesthetic-rectangle">
+          </div>
+        </div>
+    </div>
+
+        <div id="kc-container-wrapper" class="">
+
+            <div id="kc-header" class="kcHeader">
+                <div id="kc-header-wrapper" class="">    <section class="auth-section">
+        <h1 class="auth-label">Sign in to uTest</h1>
+    </section>
+</div>
+            </div>
+
+
+            <div id="kc-content" class="kcContent">
+                <div id="kc-content-wrapper" class="">
+
+
+                        <div class="kcFeedback">
+                            <div class="alert alert-error">
+                                
+                                
+                                <span class=""></span>
+                                
+                                <span class="kc-feedback-text">Invalid username or password.</span>
+                            </div>
+                        </div>
+
+                    <div id="kc-form" class="">
+                        <div id="kc-form-wrapper" class="">
+      <div id="form-login-wrapper">
+          <form id="kc-form-login" action="https://prod-auth.cloud.utest.com/auth/realms/applause/login-actions/authenticate?session_code=_hti5K7WponuvB-DylzYF2oVtOyfw3pGHddu7r2G6Ck&amp;execution=ec5dddbb-7669-40b4-af9c-c6c2ee5f7c6a&amp;client_id=utestv2&amp;tab_id=Q4T1tmOwBT4" method="post" class="auth-form" onsubmit="document.getElementById('kc-login').disabled=true;">
+            <main class="auth-main">
+              <section class="auth-section">
+                  <div class="form-group">
+                      <label class="control-label" for="username">Email Address:</label>
+                      <input class="form-control" id="username" name="username" value="<strUsername>" type="text" autocomplete="off" placeholder="jsmith@example.com" aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="password">Password:</label>
+                    <input class="form-control" id="password" name="password" type="password" autocomplete="off" placeholder="Enter your password" aria-required="true">
+                  </div>
+              </section>
+
+              <section class="auth-section flex-section">
+                  <div class="form-group">
+                    <div class="checkbox-native">
+                      <label>
+                          <input id="rememberMe" name="rememberMe" type="checkbox">
+                        <span>Remember me</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <span id="forgot-password"><a href="/auth/realms/applause/login-actions/reset-credentials?client_id=utestv2&amp;tab_id=Q4T1tmOwBT4">Forgot Password?</a></span>
+                  </div>
+              </section>
+
+              <section class="auth-section">
+                <div id="kc-form-buttons">
+                  <div>
+                    <button class="btn" name="login" id="kc-login" type="submit" value="Sign In">Sign in</button>
+                  </div>
+                </div>
+              </section>
+
+              <section class="auth-section">
+              </section>
+              <section class="auth-section">
+              </section>
+            </main>
+          </form>
+      </div>
+                        </div>
+                    </div>
+
+                        <div id="kc-info" class="kcPreamble">
+                            <div id="kc-info-wrapper" class="kcPreambleWrapper">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>

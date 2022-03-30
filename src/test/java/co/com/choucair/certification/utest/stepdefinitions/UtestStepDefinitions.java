@@ -1,6 +1,8 @@
 package co.com.choucair.certification.utest.stepdefinitions;
 
 import co.com.choucair.certification.utest.tasks.LogOut;
+import co.com.choucair.certification.utest.model.UtestData;
+
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
@@ -11,6 +13,8 @@ import co.com.choucair.certification.utest.tasks.Login;
 
 import co.com.choucair.certification.utest.tasks.OpenUp;
 
+import java.util.List;
+
 public class UtestStepDefinitions {
     //Patron Screenplay
     @Before
@@ -19,8 +23,9 @@ public class UtestStepDefinitions {
     }
 
     @Given("^than manuel wants to learn automation at the utest$")
-    public void thatManuelWantsToLearnAutomationAtTheUtest(){
-        OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(),(Login.onThePage()));
+    public void thatManuelWantsToLearnAutomationAtTheUtest(List<UtestData> UtestData) throws Exception {
+        OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(),(Login.
+                onThePage(UtestData.get(0).getStrUsername(),UtestData.get(0).getStrPassword())));
     }
 
     @When("^the user Logout with their credentials")

@@ -3,6 +3,8 @@ package co.com.choucair.certification.utest.stepdefinitions;
 import co.com.choucair.certification.utest.tasks.LogOut;
 import co.com.choucair.certification.utest.model.UtestData;
 
+import co.com.choucair.certification.utest.tasks.Register;
+import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
@@ -22,7 +24,7 @@ public class UtestStepDefinitions {
     public void setStage(){
         OnStage.setTheStage(new OnlineCast());
     }
-
+    //Scenario1
     @Given("^than manuel wants to learn automation at the utest$")
     public void thatManuelWantsToLearnAutomationAtTheUtest(List<UtestData> UtestData) throws Exception {
         OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(),(Login.
@@ -36,6 +38,13 @@ public class UtestStepDefinitions {
     @Then("^the user Logout with their credentials")
     public void theUserLogoutWithTheirCredentials(){
         OnStage.theActorCalled("Manuel").attemptsTo(LogOut.onThePage());
+    }
+    //scenario2
+    @Given("^set data in fields$")
+    public void setDataInFields(List<UtestData> UtestData) throws Exception{
+        OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(), (Register.
+                onThePage(UtestData.get(0).getStrFirstName(),UtestData.get(0).getStrLastName(),
+                        UtestData.get(0).getStrEmailAddress())));
     }
 }
 

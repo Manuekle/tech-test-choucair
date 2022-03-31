@@ -64,4 +64,19 @@ public class UtestRegisterPage extends PageObject {
 
     public static final Target NEXT_LAST_STEP = Target.the("Final button")
             .located(By.xpath("//span[contains(text(), 'Next: Last Step')]"));//id
+
+    public static final Target INPUT_PASSWORD1 = Target.the("where do we write the password")
+            .located(By.id("password"));//id
+
+    public static final Target INPUT_PASSWORD2 = Target.the("where do we write the confirmPassword")
+            .located(By.id("confirmPassword"));//id
+
+    public static final Target SELECT_TERMS = Target.the("where do we select the terms")
+            .located(By.id("termOfUse"));//id
+
+    public static final Target SELECT_PRIVACY = Target.the("where do we select the privacy")
+            .located(By.id("privacySetting"));//id
+
+    public static final Target BUTTON_REGISTER = Target.the("button register")
+            .located(By.xpath("//span[contains(text(), 'Complete Setup')]"));//id
 }

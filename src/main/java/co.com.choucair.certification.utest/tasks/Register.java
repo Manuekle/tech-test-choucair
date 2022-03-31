@@ -15,18 +15,20 @@ public class Register implements Task {
     private String strCity;
     private String strZipCode;
     private String strCountry;
+    private String strPassword;
 
-    public Register(String strFirstName, String strLastName, String strEmailAddress, String strCity, String strZipCode, String strCountry) {
+    public Register(String strFirstName, String strLastName, String strEmailAddress, String strCity, String strZipCode, String strCountry, String strPassword) {
         this.strFirstName = strFirstName;
         this.strLastName = strLastName;
         this.strEmailAddress = strEmailAddress;
         this.strCity = strCity;
         this.strZipCode = strZipCode;
         this.strCountry = strCountry;
+        this.strPassword = strPassword;
     }
 
-    public static Register onThePage(String strFirstName, String strLastName, String strEmailAddress, String strCity, String strZipCode, String strCountry) {
-        return Tasks.instrumented(Register.class,strFirstName,strLastName,strEmailAddress,strCity,strZipCode,strCountry);
+    public static Register onThePage(String strFirstName, String strLastName, String strEmailAddress, String strCity, String strZipCode, String strCountry, String strPassword) {
+        return Tasks.instrumented(Register.class,strFirstName,strLastName,strEmailAddress,strCity,strZipCode,strCountry,strPassword);
     }
 
     @Override
@@ -50,7 +52,12 @@ public class Register implements Task {
                 Click.on(UtestRegisterPage.OPTION_SO),
                 Click.on(UtestRegisterPage.SELECT_LA),
                 Click.on(UtestRegisterPage.OPTION_LA),
-                Click.on(UtestRegisterPage.NEXT_LAST_STEP)
+                Click.on(UtestRegisterPage.NEXT_LAST_STEP),
+                Enter.theValue(strPassword).into(UtestRegisterPage.INPUT_PASSWORD1),
+                Enter.theValue(strPassword).into(UtestRegisterPage.INPUT_PASSWORD2),
+                Click.on(UtestRegisterPage.SELECT_TERMS),
+                Click.on(UtestRegisterPage.SELECT_PRIVACY),
+                Click.on(UtestRegisterPage.BUTTON_REGISTER)
         );
     }
 

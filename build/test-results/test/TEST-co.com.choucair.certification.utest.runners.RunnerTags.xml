@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="co.com.choucair.certification.utest.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="manuel" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@4a71f7fb
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@7561ba00
 
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/utest.feature:8 ?[0m# Login the user
 
 2 Scenarios (?[31m1 failed?[0m, ?[32m1 passed?[0m)
-4 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m, ?[32m1 passed?[0m)
-0m26.960s
+4 Steps (?[31m1 failed?[0m, ?[32m3 passed?[0m)
+0m43.798s
 
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: chrome not reachable
   (Session info: chrome=99.0.4844.82)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-37-generic', java.version: '11.0.14.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.MyQijq}, goog:chromeOptions: {debuggerAddress: localhost:41647}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7518f3fe0fc930ad6b3c675c0897276c
-*** Element info: {Using=xpath, value=//a[contains(text(),'Log In')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.KR1zf5}, goog:chromeOptions: {debuggerAddress: localhost:41543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ec79f9ae5c8c07a3d6557472fb0f75c
+*** Element info: {Using=xpath, value=//i[contains(text(),'expand_more')]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -43,7 +42,7 @@ Session ID: 7518f3fe0fc930ad6b3c675c0897276c
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$T5unR8Xx.performAs$accessor$Oz8GC78G(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$FUjU9G1O.performAs$accessor$tnRrAdJj(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,12 +53,12 @@ Session ID: 7518f3fe0fc930ad6b3c675c0897276c
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$T5unR8Xx.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$FUjU9G1O.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.choucair.certification.utest.tasks.Login.performAs(Login.java:26)
-	at co.com.choucair.certification.utest.tasks.Login$ByteBuddy$V506tffw.performAs$accessor$Pu6NxhFb(Unknown Source)
+	at co.com.choucair.certification.utest.tasks.LogOut.performAs(LogOut.java:16)
+	at co.com.choucair.certification.utest.tasks.LogOut$ByteBuddy$9UmSqzkp.performAs$accessor$iq0V6t5D(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,13 +69,12 @@ Session ID: 7518f3fe0fc930ad6b3c675c0897276c
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.choucair.certification.utest.tasks.Login$ByteBuddy$V506tffw.performAs(Unknown Source)
+	at co.com.choucair.certification.utest.tasks.LogOut$ByteBuddy$9UmSqzkp.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
-	at co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.thatManuelWantsToLearnAutomationAtTheUtest(UtestStepDefinitions.java:30)
-	at ✽.than manuel wants to learn automation at the utest(src/test/resources/features/utest.feature:9)
+	at co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.theUserLogoutWithTheirCredentials(UtestStepDefinitions.java:40)
+	at ✽.the user Logout with their credentials(src/test/resources/features/utest.feature:13)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -119,7 +117,7 @@ TEST STARTED: Login the user
 
 TEST STARTED: Register a new user
 -------------------------------------------------------------------(utest;register-a-new-user)
-[pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 [pool-2-thread-2] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+[pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 ]]></system-err>
 </testsuite>

@@ -45,7 +45,8 @@ public class UtestStepDefinitions {
         OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(), (Register.
                 onThePage(UtestData.get(0).getStrFirstName(),UtestData.get(0).getStrLastName(),
                         UtestData.get(0).getStrEmailAddress(),UtestData.get(0).getStrCity(),
-                        UtestData.get(0).getStrZipCode(),UtestData.get(0).getStrCountry())));
+                        UtestData.get(0).getStrZipCode(),UtestData.get(0).getStrCountry(),
+                        UtestData.get(0).getStrPassword())));
     }
 }
 

@@ -35,6 +35,24 @@ public class UtestRegisterPage extends PageObject {
     public static final Target OPTION_DATE_YEAR = Target.the("where do we write the year")
             .located(By.xpath("//option[contains(text(), '1990')]"));//id
 
-    public static final Target NEXT_BUTTON = Target.the("next button")
+    public static final Target NEXT_LOCATION = Target.the("next button")
             .located(By.xpath("//span[contains(text(), 'Next: Location')]"));//id
+
+    public static final Target INPUT_CITY = Target.the("where do we write the city")
+            .located(By.id("city"));//id
+
+    public static final Target INPUT_ZIP_CODE = Target.the("where do we write the city")
+            .located(By.id("zip"));//id
+
+    public static final Target SELECT_COUNTRY = Target.the("where do we write the city")
+            .located(By.xpath("//span[contains(text(), 'Colombia')]"));//id
+
+    public static final Target NEXT_DEVICES = Target.the("next button")
+            .located(By.xpath("//span[contains(text(), 'Next: Devices')]"));//id
+
+    public static final Target SELECT_VERSION = Target.the("where do we write the city")
+            .located(By.xpath("//placeholder[contains(text(), 'Select a Version')]"));//id
+
+    public static final Target SELECT_LANGUAGE = Target.the("where do we write the city")
+            .located(By.xpath("//span[contains(text(), 'English')]"));//id
 }

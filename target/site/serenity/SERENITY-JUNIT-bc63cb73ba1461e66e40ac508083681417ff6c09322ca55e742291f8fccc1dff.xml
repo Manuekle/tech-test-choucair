@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Utest" skipped="0" tests="2" time="36.16" timestamp="2022-03-30 09:53:13"><testcase name="Login the user"/><testcase name="Register a new user"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="1" name="Utest" skipped="0" tests="2" time="38.55" timestamp="2022-03-30 10:45:48"><testcase name="Login the user"><error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=99.0.4844.82)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-37-generic', java.version: '11.0.14.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.e51LTg}, goog:chromeOptions: {debuggerAddress: localhost:43297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9880bba04fa74cb2ec79ae027d21ca6c&#10;*** Element info: {Using=xpath, value=//a[contains(text(),'Log In')]}" type="org.openqa.selenium.NoSuchWindowException">no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-37-generic', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.e51LTg}, goog:chromeOptions: {debuggerAddress: localhost:43297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9880bba04fa74cb2ec79ae027d21ca6c
+*** Element info: {Using=xpath, value=//a[contains(text(),'Log In')]}</error><system-err>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-37-generic', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.e51LTg}, goog:chromeOptions: {debuggerAddress: localhost:43297}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9880bba04fa74cb2ec79ae027d21ca6c
+*** Element info: {Using=xpath, value=//a[contains(text(),'Log In')]}
+co.com.choucair.certification.utest.tasks.Login.performAs(Login.java:26)
+co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.thatManuelWantsToLearnAutomationAtTheUtest(UtestStepDefinitions.java:30)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+</system-err></testcase><testcase name="Register a new user"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled
+co.com.choucair.certification.utest.tasks.Register.performAs(Register.java:34)
+co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.setDataInFields(UtestStepDefinitions.java:45)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+</system-err></testcase></testsuite>

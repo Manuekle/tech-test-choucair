@@ -12,15 +12,21 @@ public class Register implements Task {
     private String strFirstName;
     private String strLastName;
     private String strEmailAddress;
+    private String strCity;
+    private String strZipCode;
+    private String strCountry;
 
-    public Register(String strFirstName, String strLastName, String strEmailAddress) {
+    public Register(String strFirstName, String strLastName, String strEmailAddress, String strCity, String strZipCode, String strCountry) {
         this.strFirstName = strFirstName;
         this.strLastName = strLastName;
         this.strEmailAddress = strEmailAddress;
+        this.strCity = strCity;
+        this.strZipCode = strZipCode;
+        this.strCountry = strCountry;
     }
 
-    public static Register onThePage(String strFirstName, String strLastName, String strEmailAddress) {
-        return Tasks.instrumented(Register.class,strFirstName,strLastName,strEmailAddress);
+    public static Register onThePage(String strFirstName, String strLastName, String strEmailAddress, String strCity, String strZipCode, String strCountry) {
+        return Tasks.instrumented(Register.class,strFirstName,strLastName,strEmailAddress,strCity,strZipCode,strCountry);
     }
 
     @Override
@@ -35,7 +41,13 @@ public class Register implements Task {
                 Click.on(UtestRegisterPage.OPTION_DATE_DAY),
                 Click.on(UtestRegisterPage.SELECT_DATE_YEAR),
                 Click.on(UtestRegisterPage.OPTION_DATE_YEAR),
-                Click.on(UtestRegisterPage.NEXT_BUTTON)
+                Click.on(UtestRegisterPage.NEXT_LOCATION),
+                Enter.theValue(strCity).into(UtestRegisterPage.INPUT_CITY),
+                Enter.theValue(strZipCode).into(UtestRegisterPage.INPUT_ZIP_CODE),
+                Click.on(UtestRegisterPage.SELECT_COUNTRY),
+                Click.on(UtestRegisterPage.NEXT_DEVICES),
+                Click.on(UtestRegisterPage.SELECT_VERSION),
+                Click.on(UtestRegisterPage.SELECT_LANGUAGE)
         );
     }
 

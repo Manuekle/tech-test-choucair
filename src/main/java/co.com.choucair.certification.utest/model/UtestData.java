@@ -5,13 +5,16 @@ public class UtestData {
     //Login
     private String strUsername;
     private String strPassword;
-    //Register
+
+    //Register Step 1
     private String strFirstName;
     private String strLastName;
     private String strEmailAddress;
-    private String strDateMonth;
-    private String strDateDay;
-    private String strDateYear;
+
+    //Register Step 2
+    private String strCity;
+    private String strZipCode;
+    private String strCountry;
 
     public String getStrUsername() {
         return strUsername;
@@ -53,30 +56,29 @@ public class UtestData {
         this.strEmailAddress = strEmailAddress;
     }
 
-    public String getStrDateMonth() {
-        return strDateMonth;
+    public String getStrCity() {
+        return strCity;
     }
 
-    public void setStrDateMonth(String strDateMonth) {
-        this.strDateMonth = strDateMonth;
+    public void setStrCity(String strCity) {
+        this.strCity = strCity;
     }
 
-    public String getStrDateDay() {
-        return strDateDay;
+    public String getStrZipCode() {
+        return strZipCode;
     }
 
-    public void setStrDateDay(String strDateDay) {
-        this.strDateDay = strDateDay;
+    public void setStrZipCode(String strZipCode) {
+        this.strZipCode = strZipCode;
     }
 
-    public String getStrDateYear() {
-        return strDateYear;
+    public String getStrCountry() {
+        return strCountry;
     }
 
-    public void setStrDateYear(String strDateYear) {
-        this.strDateYear = strDateYear;
+    public void setStrCountry(String strCountry) {
+        this.strCountry = strCountry;
     }
-
 
 
 

@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-03-2022 16:18</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-03-2022 16:23</span>
     <br style="clear:left"/>
 </div>
 
@@ -179,9 +179,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">Login the user
+                                <span class="failing-color">Login the user
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -204,7 +204,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Web driver exception: The following error occurred: chrome not reachable</span>
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -220,13 +220,20 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.WebDriverException </h4>
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
                 </div>
                 <div class="card-body">
                     <div>
                         <pre>co.com.choucair.certification.utest.tasks.LogOut.performAs(LogOut.java:16)<br />co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.theUserLogoutWithTheirCredentials(UtestStepDefinitions.java:40)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
                     </div>
 
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //i[contains(text(),'expand_more')] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.com.choucair.certification.utest.tasks.LogOut.performAs(LogOut.java :16)<br />co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.theUserLogoutWithTheirCredentials(UtestStepDefinitions.java :40)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,21 +241,30 @@
 
 
                 <div class="panel-body">
-                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource17675901184367934073.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="8e3b76ce12eeb282c08df27b87ad1b630bd68c310735b10a05aefbaaf725ff64.png" title=" Given than manuel wants to learn automation at the utest
+                <img src="c9ce1031ac6e04fd9402d9d1d5b770e851d8d12a0a17913c70c2a00330f7ed0c.png" title=" Given than manuel wants to learn automation at the utest
 | strUsername | strPassword |
-| meerazo7@hotmail.com | Manuel123* |" width="1920"/>
-                <img src="8e3b76ce12eeb282c08df27b87ad1b630bd68c310735b10a05aefbaaf725ff64.png" title=" Manuel open up" width="1920"/>
-                <img src="8e3b76ce12eeb282c08df27b87ad1b630bd68c310735b10a05aefbaaf725ff64.png" title=" Manuel opens the Utest page" width="1920"/>
-                <img src="8e3b76ce12eeb282c08df27b87ad1b630bd68c310735b10a05aefbaaf725ff64.png" title=" Manuel open up (completed)" width="1920"/>
-                <img src="209a86f3e3e1059521bcde35b4e10c945077042f529793a54441e67ba4ecfe26.png" title=" Manuel login" width="1920"/>
-                <img src="209a86f3e3e1059521bcde35b4e10c945077042f529793a54441e67ba4ecfe26.png" title=" Manuel clicks on button that show us the form to login" width="1920"/>
-                <img src="d43e9dfc918fb864f545ad3a253a298279310b147c0d2026a0cdeb866693cb81.png" title=" Manuel enters 'meerazo7@hotmail.com' into where do we write the user" width="1920"/>
-                <img src="1efa21b74b023261e4a8c35c978fd8ac2e8d19120622a6b3b0d8b928933c1736.png" title=" Manuel enters 'Manuel123*' into where do we write the password: <span class='error-color'>ERROR</span>" width="1920"/>
+| lidevo6408@procowork.com | Msa_233**ff22* |" width="1920"/>
+                <img src="c9ce1031ac6e04fd9402d9d1d5b770e851d8d12a0a17913c70c2a00330f7ed0c.png" title=" Manuel open up" width="1920"/>
+                <img src="c9ce1031ac6e04fd9402d9d1d5b770e851d8d12a0a17913c70c2a00330f7ed0c.png" title=" Manuel opens the Utest page" width="1920"/>
+                <img src="c9ce1031ac6e04fd9402d9d1d5b770e851d8d12a0a17913c70c2a00330f7ed0c.png" title=" Manuel open up (completed)" width="1920"/>
+                <img src="d40cc3e84549429a0e192159f641a1695fc6700dcebea91ec2d9fcfe93307b0e.png" title=" Manuel login" width="1920"/>
+                <img src="d40cc3e84549429a0e192159f641a1695fc6700dcebea91ec2d9fcfe93307b0e.png" title=" Manuel clicks on button that show us the form to login" width="1920"/>
+                <img src="965ecf84d77981b6cc662f021d089259f637ae85e1d587ab579e4a7fc997ae22.png" title=" Manuel enters 'lidevo6408@procowork.com' into where do we write the user" width="1920"/>
+                <img src="8b96b5dfb675077557d9c4b679c9dcfcea17d1b361fa7e8c20659b9d099331d3.png" title=" Manuel enters 'Msa_233**ff22*' into where do we write the password" width="1920"/>
+                <img src="2c8106bd164e6671d28988670f47269f805e7ecfc6862b420603e8bb601e7cef.png" title=" Manuel clicks on button to confirm login" width="1920"/>
+                <img src="2c8106bd164e6671d28988670f47269f805e7ecfc6862b420603e8bb601e7cef.png" title=" Manuel login (completed)" width="1920"/>
+                <img src="2c8106bd164e6671d28988670f47269f805e7ecfc6862b420603e8bb601e7cef.png" title=" Given than manuel wants to learn automation at the utest
+| strUsername | strPassword |
+| lidevo6408@procowork.com | Msa_233**ff22* | (completed)" width="1920"/>
+                <img src="2c8106bd164e6671d28988670f47269f805e7ecfc6862b420603e8bb601e7cef.png" title=" When he finds the coursed called utest" width="1920"/>
+                <img src="2c8106bd164e6671d28988670f47269f805e7ecfc6862b420603e8bb601e7cef.png" title=" Then the user Logout with their credentials" width="1920"/>
+                <img src="2c8106bd164e6671d28988670f47269f805e7ecfc6862b420603e8bb601e7cef.png" title=" Manuel log out" width="1920"/>
+                <img src="2c8106bd164e6671d28988670f47269f805e7ecfc6862b420603e8bb601e7cef.png" title=" Manuel clicks on expand button: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

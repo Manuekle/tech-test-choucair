@@ -14,5 +14,5 @@ Feature: Utest
   @scenario2
   Scenario: Register a new user
     Given set data in fields
-      | strFirstName  | strLastName | strEmailAddress          | strCity    | strZipCode | strPassword    |
-      | Juan          | Jose        | lidevo6408@procowork.com | Popayán    | 190002     | Msa_233**ff22   |
+      | strFirstName  | strLastName | strEmailAddress          | strCity    | strZipCode | strPassword     |
+      | Juan          | Jose        | jokerog280@sartess.com   | Popayán    | 190002     | Msa_233**ff22   |

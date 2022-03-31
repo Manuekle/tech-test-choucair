@@ -46,8 +46,11 @@ public class Register implements Task {
                 Enter.theValue(strZipCode).into(UtestRegisterPage.INPUT_ZIP_CODE),
                 Click.on(UtestRegisterPage.SELECT_COUNTRY),
                 Click.on(UtestRegisterPage.NEXT_DEVICES),
-                Click.on(UtestRegisterPage.SELECT_VERSION),
-                Click.on(UtestRegisterPage.SELECT_LANGUAGE)
+                Click.on(UtestRegisterPage.SELECT_SO),
+                Click.on(UtestRegisterPage.OPTION_SO),
+                Click.on(UtestRegisterPage.SELECT_LA),
+                Click.on(UtestRegisterPage.OPTION_LA),
+                Click.on(UtestRegisterPage.NEXT_LAST_STEP)
         );
     }
 

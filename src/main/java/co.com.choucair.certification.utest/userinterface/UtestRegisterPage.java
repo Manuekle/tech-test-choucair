@@ -41,18 +41,27 @@ public class UtestRegisterPage extends PageObject {
     public static final Target INPUT_CITY = Target.the("where do we write the city")
             .located(By.id("city"));//id
 
-    public static final Target INPUT_ZIP_CODE = Target.the("where do we write the city")
+    public static final Target INPUT_ZIP_CODE = Target.the("where do we write the zip code")
             .located(By.id("zip"));//id
 
-    public static final Target SELECT_COUNTRY = Target.the("where do we write the city")
+    public static final Target SELECT_COUNTRY = Target.the("where do we write the country")
             .located(By.xpath("//span[contains(text(), 'Colombia')]"));//id
 
     public static final Target NEXT_DEVICES = Target.the("next button")
             .located(By.xpath("//span[contains(text(), 'Next: Devices')]"));//id
 
-    public static final Target SELECT_VERSION = Target.the("where do we write the city")
-            .located(By.xpath("//placeholder[contains(text(), 'Select a Version')]"));//id
+    public static final Target SELECT_SO = Target.the("Open SO")
+            .located(By.xpath("//span[contains(text(), 'Select a Version')]"));//id
 
-    public static final Target SELECT_LANGUAGE = Target.the("where do we write the city")
-            .located(By.xpath("//span[contains(text(), 'English')]"));//id
+    public static final Target OPTION_SO = Target.the("Select SO")
+            .located(By.xpath("//div[contains(text(), 'Debian')]"));//id
+
+    public static final Target SELECT_LA = Target.the("Open language")
+            .located(By.xpath("//span[contains(text(), 'Select OS language')]"));//id
+
+    public static final Target OPTION_LA = Target.the("Select language")
+            .located(By.xpath("//div[contains(text(), 'English')]"));//id
+
+    public static final Target NEXT_LAST_STEP = Target.the("Final button")
+            .located(By.xpath("//span[contains(text(), 'Next: Last Step')]"));//id
 }

@@ -25,20 +25,20 @@ public class UtestStepDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
     //Scenario1
-    @Given("^than manuel wants to learn automation at the utest$")
-    public void thatManuelWantsToLearnAutomationAtTheUtest(List<UtestData> UtestData) throws Exception {
-        OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(),(Login.
-                onThePage(UtestData.get(0).getStrUsername(),UtestData.get(0).getStrPassword())));
-    }
-    @When("^he finds the coursed called utest$")
-    public void heFindsTheCoursedCalledUtest(){
+    //@Given("^than manuel wants to learn automation at the utest$")
+    //public void thatManuelWantsToLearnAutomationAtTheUtest(List<UtestData> UtestData) throws Exception {
+    //    OnStage.theActorCalled("Manuel").wasAbleTo(OpenUp.thePage(),(Login.
+    //            onThePage(UtestData.get(0).getStrUsername(),UtestData.get(0).getStrPassword())));
+    //}
+    //@When("^he finds the coursed called utest$")
+    //public void heFindsTheCoursedCalledUtest(){
 
-    }
+    //}
 
-    @Then("^the user Logout with their credentials")
-    public void theUserLogoutWithTheirCredentials(){
-        OnStage.theActorCalled("Manuel").attemptsTo(LogOut.onThePage());
-    }
+    //@Then("^the user Logout with their credentials")
+    //public void theUserLogoutWithTheirCredentials(){
+    //    OnStage.theActorCalled("Manuel").attemptsTo(LogOut.onThePage());
+    //}
     //scenario2
     @Given("^set data in fields$")
     public void setDataInFields(List<UtestData> UtestData) throws Exception{

@@ -1,155 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Utest" tests="2" skipped="0" failures="2" errors="0" timestamp="2022-03-31T21:23:11" hostname="manuel" time="27.578">
+<testsuite name="Utest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-04-01T20:47:55" hostname="manuel" time="27.453">
   <properties/>
-  <testcase name="Login the user" classname="Utest" time="21.652">
-    <failure message="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1149)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$XSzVvmut.performAs$accessor$pE0vZwrN(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$XSzVvmut.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.choucair.certification.utest.tasks.LogOut.performAs(LogOut.java:16)
-	at co.com.choucair.certification.utest.tasks.LogOut$ByteBuddy$fbbuIjng.performAs$accessor$MnZsLH02(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.choucair.certification.utest.tasks.LogOut$ByteBuddy$fbbuIjng.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.theUserLogoutWithTheirCredentials(UtestStepDefinitions.java:40)
-	at ✽.the user Logout with their credentials(src/test/resources/features/utest.feature:13)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: //i[contains(text(),'expand_more')] to be enabled (tried for 5 second(s) with 100 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$XSzVvmut.performAs$accessor$pE0vZwrN(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$XSzVvmut.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.choucair.certification.utest.tasks.LogOut.performAs(LogOut.java:16)
-	at co.com.choucair.certification.utest.tasks.LogOut$ByteBuddy$fbbuIjng.performAs$accessor$MnZsLH02(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.choucair.certification.utest.tasks.LogOut$ByteBuddy$fbbuIjng.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.theUserLogoutWithTheirCredentials(UtestStepDefinitions.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:31)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:25)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at cucumber.api.TestStep.run(TestStep.java:83)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[contains(text(),'expand_more')]&quot;}
-  (Session info: chrome=99.0.4844.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+  <testcase name="Register a new user" classname="Utest" time="27.453">
+    <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=100.0.4896.60)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-39-generic', java.version: '11.0.14.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.S26TzP}, goog:chromeOptions: {debuggerAddress: localhost:34303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6859afe37729c5959a5478cb7f33f03d" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=100.0.4896.60)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-37-generic', java.version: '11.0.14.1'
+System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-39-generic', java.version: '11.0.14.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.tDUiFQ}, goog:chromeOptions: {debuggerAddress: localhost:41515}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d82c61b2476e00cd535d8d280ea442aa
-*** Element info: {Using=xpath, value=//i[contains(text(),'expand_more')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.S26TzP}, goog:chromeOptions: {debuggerAddress: localhost:34303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6859afe37729c5959a5478cb7f33f03d
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -160,53 +19,11 @@ Session ID: d82c61b2476e00cd535d8d280ea442aa
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 98 more
-</failure>
-  </testcase>
-  <testcase name="Register a new user" classname="Utest" time="5.914">
-    <failure message="net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: chrome not reachable&#10;  (Session info: chrome=99.0.4844.82)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-37-generic', java.version: '11.0.14.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.ofP6dj}, goog:chromeOptions: {debuggerAddress: localhost:37631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f96bf26168c9a63579e9e94f7823c10f&#10;*** Element info: {Using=xpath, value=//a[contains(text(), 'Join Today')]}" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: chrome not reachable
-  (Session info: chrome=99.0.4844.82)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'manuel', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-37-generic', java.version: '11.0.14.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.ofP6dj}, goog:chromeOptions: {debuggerAddress: localhost:37631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f96bf26168c9a63579e9e94f7823c10f
-*** Element info: {Using=xpath, value=//a[contains(text(), 'Join Today')]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
-	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1231)
 	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$Vc1Rl1MI.performAs$accessor$g4fpbQwV(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$40gZMHAx.performAs$accessor$3i60kcxM(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -217,12 +34,12 @@ Session ID: f96bf26168c9a63579e9e94f7823c10f
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$Vc1Rl1MI.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$40gZMHAx.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
 	at co.com.choucair.certification.utest.tasks.Register.performAs(Register.java:36)
-	at co.com.choucair.certification.utest.tasks.Register$ByteBuddy$oNl4DG89.performAs$accessor$5qsOuE4C(Unknown Source)
+	at co.com.choucair.certification.utest.tasks.Register$ByteBuddy$FGPS4xX9.performAs$accessor$T6yP5pa9(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -233,181 +50,103 @@ Session ID: f96bf26168c9a63579e9e94f7823c10f
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
-	at co.com.choucair.certification.utest.tasks.Register$ByteBuddy$oNl4DG89.performAs(Unknown Source)
+	at co.com.choucair.certification.utest.tasks.Register$ByteBuddy$FGPS4xX9.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
 	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:158)
 	at co.com.choucair.certification.utest.stepdefinitions.UtestStepDefinitions.setDataInFields(UtestStepDefinitions.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at cucumber.runtime.Utils$1.call(Utils.java:31)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:25)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
-	at cucumber.api.TestStep.executeStep(TestStep.java:102)
-	at cucumber.api.TestStep.run(TestStep.java:83)
-	at cucumber.api.TestCase.run(TestCase.java:58)
-	at cucumber.runner.Runner.runPickle(Runner.java:80)
-	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:829)
+	at ✽.set data in fields(src/test/resources/features/utest.feature:16)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6f70163e
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3f492e10
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4867a197
-mar 31, 2022 4:23:11 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7823fbe0
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@56b73bef
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@85c83fd
+abr 01, 2022 3:47:56 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 4987
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 8381
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-mar 31, 2022 4:23:13 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@39216209
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@484e5b28
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@32f1100
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@10d4faab
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@693237f1
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d60814e
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]], When he finds the coursed called utest
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3c2ab943
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@4a473454
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@69d2f6f8
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]], When he finds the coursed called utest, Then the user Logout with their credentials [Manuel log out [Manuel clicks on expand button]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]], When he finds the coursed called utest, Then the user Logout with their credentials [Manuel log out [Manuel clicks on expand button]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]], When he finds the coursed called utest, Then the user Logout with their credentials [Manuel log out [Manuel clicks on expand button]]]
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED: Login the user
---------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Manuel clicks on expand button
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected enabled element was not enabled
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@255a7894
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3d2bc6f5
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6be0d037
-mar 31, 2022 4:23:32 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
-INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 14972
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mar 31, 2022 4:23:33 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1648846077,603][WARNING]: This version of ChromeDriver has not been tested with Chrome version 100.
+abr 01, 2022 3:47:57 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
 | strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
-| Juan | Jose | lidevo6408@procowork.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page]]
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page]]
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
 | strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
-| Juan | Jose | lidevo6408@procowork.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@3072eb97
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6e93d5df
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@1412276c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5df83b08
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@7686d502
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@f3c131c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@128588ad
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2e60f82c
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@24b1cfca
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6f6090af
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@5abfa098
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@72e21a62
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2c5f9c84
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year, Manuel clicks on where do we write the year]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@37912a23
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year, Manuel clicks on where do we write the year, Manuel clicks on next button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@2a7b143d
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year, Manuel clicks on where do we write the year, Manuel clicks on next button, Manuel enters 'Popayán' into where do we write the city]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@18a234ba
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year, Manuel clicks on where do we write the year, Manuel clicks on next button, Manuel enters 'Popayán' into where do we write the city, Manuel enters '190002' into where do we write the zip code]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@600d888b
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepFinished: current outcome:Register a new user:Given set data in fields
+| strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year, Manuel clicks on where do we write the year, Manuel clicks on next button, Manuel enters 'Popayán' into where do we write the city, Manuel enters '190002' into where do we write the zip code, Manuel clicks on next button]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@32d3518b
 [Test worker] WARN net.thucydides.core.steps.BaseStepListener - testFinished: Register a new user:Given set data in fields
 | strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
-| Juan | Jose | lidevo6408@procowork.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]], When he finds the coursed called utest, Then the user Logout with their credentials [Manuel log out [Manuel clicks on expand button]], Register a new user:Given set data in fields
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year, Manuel clicks on where do we write the year, Manuel clicks on next button, Manuel enters 'Popayán' into where do we write the city, Manuel enters '190002' into where do we write the zip code, Manuel clicks on next button, Manuel clicks on Open SO]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - TestOutcomes: [Register a new user:Given set data in fields
 | strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
-| Juan | Jose | lidevo6408@procowork.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register]]]
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Login the user:Given than manuel wants to learn automation at the utest
-| strUsername | strPassword |
-| lidevo6408@procowork.com | Msa_233**ff22* | [Manuel open up [Manuel opens the Utest page], Manuel login [Manuel clicks on button that show us the form to login, Manuel enters 'lidevo6408@procowork.com' into where do we write the user, Manuel enters 'Msa_233**ff22*' into where do we write the password, Manuel clicks on button to confirm login]], When he finds the coursed called utest, Then the user Logout with their credentials [Manuel log out [Manuel clicks on expand button]], Register a new user:Given set data in fields
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year, Manuel clicks on where do we write the year, Manuel clicks on next button, Manuel enters 'Popayán' into where do we write the city, Manuel enters '190002' into where do we write the zip code, Manuel clicks on next button, Manuel clicks on Open SO]]]
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - Final testOutcomes: [Register a new user:Given set data in fields
 | strFirstName | strLastName | strEmailAddress | strCity | strZipCode | strPassword |
-| Juan | Jose | lidevo6408@procowork.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register]]]
+| Juan | Jose | minombre123@test.com | Popayán | 190002 | Msa_233**ff22 | [Manuel open up [Manuel opens the Utest page], Manuel register [Manuel clicks on button register, Manuel enters 'Juan' into where do we write the first name, Manuel enters 'Jose' into where do we write the last name, Manuel enters 'minombre123@test.com' into where do we write the email, Manuel clicks on where do we write the month, Manuel clicks on where do we write the month, Manuel clicks on where do we write the day, Manuel clicks on where do we write the day, Manuel clicks on where do we write the year, Manuel clicks on where do we write the year, Manuel clicks on next button, Manuel enters 'Popayán' into where do we write the city, Manuel enters '190002' into where do we write the zip code, Manuel clicks on next button, Manuel clicks on Open SO]]]
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -418,7 +157,7 @@ INFORMACIÓN: Detected dialect: W3C
 
 TEST FAILED WITH ERROR: Register a new user
 ---------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Manuel clicks on button register
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - The following error occurred: chrome not reachable
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Manuel clicks on Open SO
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - element not interactable
 ]]></system-err>
 </testsuite>

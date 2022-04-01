@@ -45,15 +45,24 @@ public class UtestRegisterPage extends PageObject {
             .located(By.id("zip"));//id
 
     public static final Target SELECT_COUNTRY = Target.the("where do we write the country")
+            .located(By.xpath("//span[contains(text(), 'Select a country')]"));//id
+
+    public static final Target OPTION_COUNTRY = Target.the("where do we write the country")
             .located(By.xpath("//span[contains(text(), 'Colombia')]"));//id
 
     public static final Target NEXT_DEVICES = Target.the("next button")
             .located(By.xpath("//span[contains(text(), 'Next: Devices')]"));//id
 
     public static final Target SELECT_SO = Target.the("Open SO")
-            .located(By.xpath("//span[contains(text(), 'Select a Version')]"));//id
+            .located(By.xpath("//span[contains(text(), 'Select OS')]"));//id
 
     public static final Target OPTION_SO = Target.the("Select SO")
+            .located(By.xpath("//div[contains(text(), 'Linux')]"));//id
+
+    public static final Target SELECT_SO_VERSION = Target.the("Open SO version")
+            .located(By.xpath("//span[contains(text(), 'Select a Version')]"));//id
+
+    public static final Target OPTION_SO_VERSION = Target.the("Select SO version")
             .located(By.xpath("//div[contains(text(), 'Debian')]"));//id
 
     public static final Target SELECT_LA = Target.the("Open language")

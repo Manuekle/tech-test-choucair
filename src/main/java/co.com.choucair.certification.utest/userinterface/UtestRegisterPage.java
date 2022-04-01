@@ -63,7 +63,7 @@ public class UtestRegisterPage extends PageObject {
             .located(By.xpath("//span[contains(text(), 'Select a Version')]"));//id
 
     public static final Target OPTION_SO_VERSION = Target.the("Select SO version")
-            .located(By.xpath("//div[contains(text(), 'Debian')]"));//id
+            .located(By.xpath("//div[contains(text(), 'Windows 10')]"));//id
 
     public static final Target SELECT_LA = Target.the("Open language")
             .located(By.xpath("//span[contains(text(), 'Select OS language')]"));//id
